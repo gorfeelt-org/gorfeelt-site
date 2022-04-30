@@ -1,5 +1,7 @@
 <script>
-export default {};
+import { RouterLink } from "vue-router";
+
+export default { components: { RouterLink } };
 </script>
 
 <template>
@@ -18,12 +20,12 @@ export default {};
     Sorry about that. But to naky and garf. Naky, i did not expect you to join
     garf, i thought we were still friends. Garf, thanks for your respawn
     anchors!!!! it helped me a lot!!!! I was sad to find we didnt have any
-    glowgorfeelt so i made it myself. lolololololol mex special. goodbye
+    glowstone so i made it myself. lolololololol mex special. goodbye
     loooooooooooooooool
     <div class="flex flex-wrap w-full h-85 pt-2 gap-2 text-gorfeelt-100">
-      <a class="hover:underline" href="/">Upvote</a>
-      <a class="hover:underline" href="/">Downvote</a>
-      <a class="hover:underline" href="/">View thread</a>
+      <router-link class="hover:underline" to="/">Upvote</router-link>
+      <router-link class="hover:underline" to="/">Downvote</router-link>
+      <router-link class="hover:underline" to="/">View thread</router-link>
       <span class="text-gorfeelt-200"
         >Score: {{ Math.round(Math.random() * 4000) - 2000 }}</span
       >
